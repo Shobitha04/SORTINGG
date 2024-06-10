@@ -1,0 +1,35 @@
+time complexity= theta(n^2)
+does LESS MEMORY WRITES compared to others. However, it isnt optimal, cycle sort is optimal.
+in EEPROM memory erites are costly, so we can use this sort.
+Heap sort is based on selection sort. selection sort IS NOT STABLE. it is IN-PLACE alg, doesn't need another array to store elements.
+
+ex.
+arr: 10 5 8 20 2 18 (replace w. INFINITE)
+temp:2 5 8 10 18 20
+replace arr: 2 5 8 10 18 20
+
+better implementation, w/o using temp
+
+10 5 8 20 2 18 (swap 10,2) i=0; min index= 1
+
+2 5 8 20 10 18 (swap5,5)   i=1; min index=1
+
+2 5 8 20 10 18 (swap 8,8)  
+  
+2 5 8 10 20 18 (swap 20,10)
+
+2 5 8 10 18 20 (swap 20,18)
+
+void SelectSot(arr,n)
+{
+ for(i=0;i<n-1;i++)
+ {
+   min_ind=i;
+  for(int j=i+1;j<n;j++)
+      if(arr[j]<arr(min_ind))
+          min_ind=j;
+      swap(arr[min_ind],arr[i]);
+      
+
+
+
