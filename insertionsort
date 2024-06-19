@@ -1,0 +1,33 @@
+popular for SMALL-SIZED elements
+O(n^2) worst case
+in-place and stable
+O(n) best case
+
+
+0...i-1keyi...n-1
+sorted   unsorted
+run loop from 1 to n-1 (in this case n=6; run from 1 to 5)
+20 5 40 60 10 30 i=1 (dont sort 1st element, start sorting from 2nd)
+5 20 40 60 10 30
+5 20 40 60 10 30
+5 20 40 60 10 30
+5 10 20 40 60 30
+5 10 20 30 40 60
+
+void InsSort(int arr[], int n)
+{
+ for(int i=1;i<n;i++)
+ {
+  int key=arr[i];
+  int j=i-1;
+  while(j>=0 && arr[j]>key)//we run loop as long as key is smaller
+  {
+   arr[j+1]=arr[j];
+   j--;
+  }
+  arr[j+1]=key;
+
+  }
+  }
+   
+   
