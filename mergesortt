@@ -1,0 +1,13 @@
+DIVIDE AND CONQUER ALGG (divide,conquer and merge)
+stable algg
+thera(n log n)time but takes O(n) auxillary space
+well suited for linked lists. works in O(1) aux space
+used in EXTERNAL SORTING
+python uses timsort(merge sort+ insertion sort variation)
+
+ex:merge 2 sorted arrays
+a[]= {10,15,20,20} m=4
+b[]= {1,12}        n=2
+
+after 1st loop : c[]={10,15,20,20,_,_}
+after 2nd loop : c[]={10,15,20,20,1,12}
